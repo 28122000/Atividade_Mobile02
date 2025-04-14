@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/checkCalabresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calabresa" />
+
+    <CheckBox
+        android:id="@+id/checkMarguerita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marguerita"
+        android:layout_below="@id/checkCalabresa" />
+
+    <CheckBox
+        android:id="@+id/checkPortuguesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Portuguesa"
+        android:layout_below="@id/checkMarguerita" />
+
+    <Button
+        android:id="@+id/btnIrParaTamanho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolher Tamanho e Pagamento"
+        android:layout_below="@id/checkPortuguesa"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

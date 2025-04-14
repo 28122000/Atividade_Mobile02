@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/radioGroupTamanho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton android:text="Pequena" />
+        <RadioButton android:text="Média" />
+        <RadioButton android:text="Grande" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupPagamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupTamanho">
+        <RadioButton android:text="Dinheiro" />
+        <RadioButton android:text="Cartão" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirmarPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Pedido"
+        android:layout_below="@id/radioGroupPagamento"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

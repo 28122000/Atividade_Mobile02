@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema de Compras"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkArroz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Arroz 1Kg (R$2,69)"
+        app:layout_constraintTop_toBottomOf="@id/textTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkLeite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Leite Longa Vida (R$2,70)"
+        app:layout_constraintTop_toBottomOf="@id/checkArroz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkCarne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Carne Friboi (R$16,70)"
+        app:layout_constraintTop_toBottomOf="@id/checkLeite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkFeijao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Feijão Carioquinha 1Kg (R$3,38)"
+        app:layout_constraintTop_toBottomOf="@id/checkCarne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkRefrigerante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Refrigerante Coca-Cola 2L (R$3,00)"
+        app:layout_constraintTop_toBottomOf="@id/checkFeijao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Calcular Total"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/checkRefrigerante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: R$ 0,00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/btnCalcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
